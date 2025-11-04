@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мероприятия Владимира - Все события</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Владимир Events</h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="events.html" class="nav-link active">Мероприятия</a></li>
+                        <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Все мероприятия</h1>
+                <p>Найдите интересующие вас события в городе Владимир</p>
+            </div>
+        </section>
+
+        <section class="events-filter">
+            <div class="container">
+                <div class="filter-form">
+                    <div class="form-group">
+                        <label for="category">Категория</label>
+                        <select id="category">
+                            <option value="all">Все категории</option>
+                            <option value="culture">Культура</option>
+                            <option value="sport">Спорт</option>
+                            <option value="music">Музыка</option>
+                            <option value="education">Образование</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Дата</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Местоположение</label>
+                        <input type="text" id="location" placeholder="Введите место">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Найти</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="events-list">
+            <div class="container">
+                <div class="events-grid">
+                    <!-- Фестиваль уличных театров -->
+                    <article class="event-item" data-event-id="festival">
+                        <div class="event-image">
+                            <img src="https://spbcult.ru/upload/medialibrary/d02/2bcqnnhgeh0119chvj00vpt0drm4jbk7.jpg" alt="Фестиваль уличных театров">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-date">
+                                <span class="month">октябрь</span>
+                                <span class="day">15</span>
+                            </div>
+                            <div class="event-header">
+                                <h3 class="event-title">Фестиваль уличных театров</h3>
+                                <span class="event-category">Культура</span>
+                            </div>
+                            <div class="event-location">
+                                <span class="location-icon">📍</span>
+                                <span>Центральный парк</span>
+                            </div>
+                            <div class="event-description">
+                                <p>Яркое шоу с участием лучших уличных театров России. В программе: спектакли, перфомансы, интерактивные представления для всей семьи.</p>
+                            </div>
+                            <div class="event-actions">
+                                <button class="btn btn-outline">Подробнее</button>
+                                <button class="btn btn-primary">Участвовать</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Джазовый вечер -->
+                    <article class="event-item" data-event-id="jazz">
+                        <div class="event-image">
+                            <img src="https://st.rolld.ru/i/thumbnails/vecher-dzhaza-serenada-lunnogo-sveta.jpeg" alt="Джазовый вечер">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-date">
+                                <span class="month">октябрь</span>
+                                <span class="day">22</span>
+                            </div>
+                            <div class="event-header">
+                                <h3 class="event-title">Джазовый вечер</h3>
+                                <span class="event-category">Музыка</span>
+                            </div>
+                            <div class="event-location">
+                                <span class="location-icon">📍</span>
+                                <span>Дом культуры молодежи</span>
+                            </div>
+                            <div class="event-description">
+                                <p>Выступление известных джазовых коллективов. В программе: классический джаз, современные аранжировки, импровизации.</p>
+                            </div>
+                            <div class="event-actions">
+                                <button class="btn btn-outline">Подробнее</button>
+                                <button class="btn btn-primary">Участвовать</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Выставка современного искусства -->
+                    <article class="event-item" data-event-id="exhibition">
+                        <div class="event-image">
+                            <img src="https://avatars.dzeninfra.ru/get-zen_doc/8220767/pub_640492eb875e0f0961bb121b_640492f7875e0f0961bb13b3/scale_1200" alt="Выставка современного искусства">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-date">
+                                <span class="month">октябрь</span>
+                                <span class="day">29</span>
+                            </div>
+                            <div class="event-header">
+                                <h3 class="event-title">Выставка современного искусства</h3>
+                                <span class="event-category">Культура</span>
+                            </div>
+                            <div class="event-location">
+                                <span class="location-icon">📍</span>
+                                <span>Владимиро-Суздальский музей-заповедник</span>
+                            </div>
+                            <div class="event-description">
+                                <p>Работы современных художников Владимирской области. Живопись, графика, скульптура, инсталляции.</p>
+                            </div>
+                            <div class="event-actions">
+                                <button class="btn btn-outline">Подробнее</button>
+                                <button class="btn btn-primary">Участвовать</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Остальные мероприятия -->
+                    <article class="event-item" data-event-id="masterclass">
+                        <div class="event-image">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-s/2e/62/0c/dc/want-to-try-pottery-or.jpg" alt="Мастер-класс по гончарному делу">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-date">
+                                <span class="month">ноябрь</span>
+                                <span class="day">05</span>
+                            </div>
+                            <div class="event-header">
+                                <h3 class="event-title">Мастер-класс по гончарному делу</h3>
+                                <span class="event-category">Образование</span>
+                            </div>
+                            <div class="event-location">
+                                <span class="location-icon">📍</span>
+                                <span>Центр народного творчества</span>
+                            </div>
+                            <div class="event-description">
+                                <p>Практическое занятие по работе с глиной. Участники создадут собственные изделия под руководством опытного мастера.</p>
+                            </div>
+                            <div class="event-actions">
+                                <button class="btn btn-outline">Подробнее</button>
+                                <button class="btn btn-primary">Участвовать</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="event-item" data-event-id="marathon">
+                        <div class="event-image">
+                            <img src="https://avatars.mds.yandex.net/i?id=0ff7c18d98ba06c81ffd9b77454df604_l-10148308-images-thumbs&n=13" alt="Городской марафон">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-date">
+                                <span class="month">ноябрь</span>
+                                <span class="day">12</span>
+                            </div>
+                            <div class="event-header">
+                                <h3 class="event-title">Городской марафон "Золотое кольцо"</h3>
+                                <span class="event-category">Спорт</span>
+                            </div>
+                            <div class="event-location">
+                                <span class="location-icon">📍</span>
+                                <span>Старт: Соборная площадь</span>
+                            </div>
+                            <div class="event-description">
+                                <p>Ежегодный марафон по историческому центру Владимира. Дистанции: 5 км, 10 км, полумарафон.</p>
+                            </div>
+                            <div class="event-actions">
+                                <button class="btn btn-outline">Подробнее</button>
+                                <button class="btn btn-primary">Участвовать</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="event-item" data-event-id="lecture">
+                        <div class="event-image">
+                            <img src="https://shareslide.ru/img/thumbs/f48ed6dac0d59f4e596ad4bd596f261f-800x.jpg" alt="Лекция по истории Владимира">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-date">
+                                <span class="month">ноябрь</span>
+                                <span class="day">19</span>
+                            </div>
+                            <div class="event-header">
+                                <h3 class="event-title">Лекция "Тайны древнего Владимира"</h3>
+                                <span class="event-category">Образование</span>
+                            </div>
+                            <div class="event-location">
+                                <span class="location-icon">📍</span>
+                                <span>Исторический музей</span>
+                            </div>
+                            <div class="event-description">
+                                <p>Увлекательная лекция от известного историка о малоизвестных фактах из истории города Владимир.</p>
+                            </div>
+                            <div class="event-actions">
+                                <button class="btn btn-outline">Подробнее</button>
+                                <button class="btn btn-primary">Участвовать</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Владимир</h3>
+                    <p>Информационный портал о мероприятиях города Владимир</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="events.html">Мероприятия</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>г. Владимир, ул. Большая Московская, 11</p>
+                    <p>+7 (4922) 32-25-59</p>
+                    <p>info@vladevents.ru</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Владимир. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Получаем параметр highlight из URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const highlightEvent = urlParams.get('highlight');
+            
+            // Если есть параметр highlight, выделяем соответствующее событие
+            if (highlightEvent) {
+                const eventElement = document.querySelector(`[data-event-id="${highlightEvent}"]`);
+                if (eventElement) {
+                    // Добавляем класс выделения
+                    eventElement.classList.add('highlighted-event');
+                    
+                    // Плавно прокручиваем к выделенному элементу
+                    setTimeout(() => {
+                        eventElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'center'
+                        });
+                    }, 500);
+                    
+                    // Автоматически убираем выделение через 5 секунд
+                    setTimeout(() => {
+                        eventElement.classList.remove('highlighted-event');
+                    }, 5000);
+                }
+            }
+
+            // Обработка фильтра
+            document.querySelector('.filter-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Фильтр применен!');
+            });
+
+            // Обработка кнопок мероприятий
+            document.querySelectorAll('.btn-outline').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const eventTitle = this.closest('.event-item').querySelector('.event-title').textContent;
+                    alert(`Подробнее о мероприятии: ${eventTitle}`);
+                });
+            });
+
+            document.querySelectorAll('.btn-primary').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const eventTitle = this.closest('.event-item').querySelector('.event-title').textContent;
+                    alert(`Вы записаны на мероприятие: ${eventTitle}`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

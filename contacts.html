@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мероприятия Владимира - Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Владимир</h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="events.html" class="nav-link">Мероприятия</a></li>
+                        <li><a href="contacts.html" class="nav-link active">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Контакты</h1>
+                <p>Свяжитесь с нами для получения дополнительной информации</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Наши контакты</h2>
+                        <div class="contact-item">
+                            <h3>Адрес</h3>
+                            <p>г. Владимир, ул. Большая Московская, 11</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Телефон</h3>
+                            <p>+7 (4922) 32-25-59</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Email</h3>
+                            <p>info@vladevents.ru</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Режим работы</h3>
+                            <p>Пн-Пт: 9:00 - 18:00</p>
+                            <p>Сб-Вс: 10:00 - 16:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h2>Напишите нам</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Имя *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Тема</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Сообщение *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+    <div class="container">
+        <h2 class="section-title">Карта мероприятий Владимира</h2>
+        <div class="map-description">
+            <p>На карте отмечены основные места проведения мероприятий в нашем городе</p>
+        </div>
+        
+        <!-- Основной контентный блок с серым фоном -->
+        <div class="content-wrapper">
+            <div class="map-container">
+                <div class="map-wrapper">
+                    <iframe 
+                        src=https://yandex.ru/map-widget/v1/?um=constructor%3Aa4f0ccc90baa27e8e0eb10baae9c35362866322ba16889eb7e63be0236e805fd&amp;source=constructor" 
+                        frameborder="0"
+                        allowfullscreen="true"
+                        class="responsive-iframe">
+                    </iframe>
+                </div>
+            </div>
+            
+            <div class="map-legend">
+                <h3>Обозначения на карте:</h3>
+                <ul>
+                    <li>🔵 Центральный парк - Фестиваль уличных театров (15 октября)</li>
+                    <li>🔵 Дом культуры молодежи - Джазовый вечер (22 октября)</li>
+                    <li>🔵 Владимиро-Суздальский музей-заповедник - Выставка современного искусства (29 октября)</li>
+                    <li>🔵 Центр народного творчества - Мастер-класс по гончарному делу (5 ноября)</li>
+                    <li>🔵 Соборная площадь - Марафон "Золотое кольцо" (12 ноября)</li>
+                    <li>🔵 Исторический музей - Лекция "Тайны древнего Владимира" (19 ноября)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Владимир Events</h3>
+                    <p>Информационный портал о мероприятиях города Владимир</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="events.html">Мероприятия</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>г. Владимир, ул. Большая Московская, 11</p>
+                    <p>+7 (4922) 32-25-59</p>
+                    <p>info@vladevents.ru</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Владимир. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Получаем значения полей
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Сбрасываем предыдущие ошибки
+            document.getElementById('nameError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('messageError').textContent = '';
+            
+            let isValid = true;
+            
+            // Проверка имени
+            if (name.trim() === '') {
+                document.getElementById('nameError').textContent = 'Пожалуйста, введите ваше имя';
+                isValid = false;
+            }
+            
+            // Проверка email
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById('emailError').textContent = 'Пожалуйста, введите корректный email';
+                isValid = false;
+            }
+            
+            // Проверка сообщения
+            if (message.trim() === '') {
+                document.getElementById('messageError').textContent = 'Пожалуйста, введите ваше сообщение';
+                isValid = false;
+            }
+            
+            if (isValid) {
+                alert('Сообщение успешно отправлено!');
+                this.reset();
+            }
+        });
+    </script>
+</body>
+</html>
